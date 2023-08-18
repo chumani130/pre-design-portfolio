@@ -1,0 +1,127 @@
+/* default css start */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  body{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+  }
+  // .container {
+  //   width: 100%;
+  //   max-width: 1440px;
+  //   margin: 0 auto;
+  //   padding: 0 15px;
+  // }
+ 
+  
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: linear-gradient(45deg, #8b80aa, #333335);
+ 
+}
+img.mylogo {
+  max-width: 60px;
+  height: auto;
+  border-radius: 10px;
+}
+.icon {
+  display: flex;
+  padding: 10px;
+  cursor: pointer;
+  z-index: 1;
+
+  img {
+      color: #222;
+  }
+  transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 2);
+}
+
+.icons {
+  display: flex;
+  justify-content: center;
+  gap: 9px;
+  padding: 0;
+  margin: 0
+  
+}
+icons a {
+    color: #fff;
+    padding: 12px;
+    display: block;
+    text-decoration: none;
+}
+
+ 
+  .site-navbar ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+  }
+  .site-navbar ul li a {
+    color: #fff;
+    padding: 12px;
+    display: block;
+    text-decoration: none;
+    font-size: 40px;
+  }
+  .site-navbar ul li a:hover {
+    background: rgba(255,255,255,.1);
+  }
+  
+  
+  @media screen and (max-width: 767px) {
+    // .container {
+    //   max-width: 720px;
+    // }
+    
+    .site-navbar {
+      min-height: 60px;
+    }
+    .site-navbar ul {
+      position: absolute;
+      width: 100%;
+      height: calc(100vh - 60px);
+      left: 0;
+      top: 60px;
+      flex-direction: column;
+      align-items: center;
+      background-color: rgba(0,0,0,.75);
+      max-height: 0;
+      overflow: hidden;
+      transition: .3s;
+    }
+    .site-navbar ul li {
+      width: 100%;
+      text-align: center;
+    }
+    .site-navbar ul li a {
+      padding: 25px;
+    }
+    .site-navbar ul li a:hover {
+      background-color: rgba(255,255,255,.1);
+    }
+    .site-navbar ul.open {
+      max-height: 100vh;
+      overflow: visible;
+    }
+  }
+  
+  
+  
+  
+  
+  // .header-area {
+  //     background: linear-gradient(rgba(0,0,0,.3), rgba(0,0,0,.5)),
+  //     url(https://images.unsplash.com/photo-1528353518104-dbd48bee7bc4?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2089&q=80);
+  //     background-position: center center;
+  //     background-size: cover;
+  //   }  when you are applyin a background on a contact page
+  
