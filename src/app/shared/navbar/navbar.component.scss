@@ -1,19 +1,5 @@
 /* default css start */
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-  body{
-    font-family: 'Open Sans', sans-serif;
-    font-size: 14px;
-    font-weight: 400;
-    line-height: 20px;
-    background-color: #f1f2f6;
-    width: 100%;
-    margin: 0;
-    padding: 0;
-  }
+
   // .container {
   //   width: 100%;
   //   max-width: 1440px;
@@ -23,12 +9,14 @@
  
   
 .navbar {
+  width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background: linear-gradient(45deg, #8b80aa, #333335);
+  // background: linear-gradient(45deg, #8b80aa, #333335);
+  background-color: white;
   margin: 0;
-  width: 100%;
+  
   padding: 10px;
   padding-right: 30px;
   padding-left: 30px;
@@ -44,17 +32,18 @@ img.mylogo {
   cursor: pointer;
   z-index: 1;
   border-radius : 50%;
-  background-color: rgb(109, 108, 108);
+  // background-color: rgb(109, 108, 108);
+  background-color: #66676c;
 
 
   img {
       color: #222;
       width: 25px;
-
+      &:hover {
+      transition: 1s ease-out;
+    }
   }
-  img :hover {
-    transition: 1s ease-out;
-  }
+ 
 
   transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 2);
 }
