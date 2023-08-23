@@ -52,32 +52,38 @@ p {
     justify-content: space-around;
 }
 .button {
+    display: flex;
     text-align: center;
+    width: max-content;
     padding: 5px 10px;
     border-radius: 0px 12px 0px 12px;
-    border: 4px double #000000;
+    border: none;
+    transition: all 0.5s;
+    -webkit-transition: all 0.5s;
+    font-size: 1.1rem;
     color: black;
-    background-color: #666262;
+    background-color:#16a34a;
     cursor: pointer;
     margin: 0px;
     text-decoration: none;
     transition: all 0.5s;
     position: relative;
 
-    &:after {
-        content: '\00bb';
-        position: absolute;
-        opacity: 0;
-        top: 0;
-        right: -20px;
-        transition: 0.5s;
+    &:hover {
+        background-color: #22c55e;
+        color: white;
+    }
+    &:focus {
+        background-color: #22c55e;
+        color: white;
+        transform: scale(0.98);
+        box-shadow: none;
+        border: 2px solid rgb(95, 94, 94);
     }
 }
 
 
-.button:hover {
-    background-color: darken(rgb(184, 230, 184), 10%);
-}
+
 
 .social-links {
     margin-top: 20px;
@@ -86,6 +92,7 @@ p {
     flex-direction: row;
     border-radius: 1rem;
     padding: 0;
+    width: auto;
     a {
         display: flex;
         justify-content: center;
@@ -101,32 +108,72 @@ p {
             font-size: 3.2rem;
             transition: 0.3s;
             -webkit-transition: all 0.3s;
-            color: #222222;
+            color: #000000;
         }
 
         &:hover {
-            transform: scale(1.8);
-            border-radius: 50%;
-        &:focus {
-            transform: scale(1.1);
-            border-radius: 50%;
+            transform: scale(2);
+            border-radius: 50%; 
+            i:hover {
+                color: #fff;
+            }  
         }
+
+        &:focus {
+            transform: scale(2);
+            border-radius: 50%;
+            i {
+                color: #fff;
+            } 
         }
        
     }
-    .linkdin {
-        &:hover {
-            background-color: #0077b5;
-        }
-    }
+
 }
-
-// .social-icon {
-//     display: inline-block;
-//     margin-right: 10px;
-//     font-size: 18px;
-//     color: #007bff;
-//     text-decoration: none;
-// }
-
-/* Add additional styling as needed */
+.social-links .linkedin:hover,
+.social-links .linkedin:focus {
+  background-color: #0077b5;
+}
+.social-links .github:hover,
+.social-links .github:focus {
+  background-color: #252525;
+}
+.social-links .instagram:hover,
+.social-links .instagram:focus {
+  background: radial-gradient(
+    circle at 30% 110%,
+    #ffdb8b 0%,
+    #ee653d 25%,
+    #d42e81 50%,
+    #a237b6 75%,
+    #3e5fbc 100%
+  );
+}
+.social-links .twitter:hover,
+.social-links .twitter:focus {
+  background-color: #1da1f2;
+}
+.social-links .dribbble:hover,
+.social-links .dribbble:focus {
+  background-color: #db2777;
+}
+.social-links .flickr:hover,
+.social-links .flickr:focus {
+  background-image: linear-gradient(to right, #1da1f2 50%, #db2777 50%);
+}
+.social-links .pinterest:hover,
+.social-links .pinterest:focus {
+  background-color: #e60023;
+}
+.social-links .medium:hover,
+.social-links .medium:focus {
+  background-color: var(--dark-gray);
+}
+.social-links .facebook:hover,
+.social-links .facebook:focus {
+  background-color: #3b5998;
+}
+.social-links .behance:hover,
+.social-links .behance:focus {
+  background-color: var(--dark-gray);
+}
