@@ -24,7 +24,7 @@ import { FooterComponent } from './shared/footer/footer.component';
     EducationComponent,
     ExperienceComponent,
     ContactComponent,
-    FooterComponent
+    FooterComponent,
   ],
   imports: [
     BrowserModule,
