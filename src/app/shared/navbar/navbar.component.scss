@@ -9,6 +9,7 @@
  
   
 .navbar {
+  position: fixed;
   width: 100%;
   display: flex;
   justify-content: space-between;
@@ -22,6 +23,7 @@
   padding: 10px;
   padding-right: 30px;
   padding-left: 30px;
+
 }
 img.mylogo {
   max-width: 60px;
