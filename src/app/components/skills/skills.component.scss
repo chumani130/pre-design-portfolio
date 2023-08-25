@@ -1,0 +1,51 @@
+
+.title {
+    margin: 100px;
+}
+.skill-container {
+    display: grid;
+    grid-gap: 2rem;
+    width: 80%;
+    height: 80%;
+    grid-template-columns: repeat(auto-fit, minmax(15rem, 15rem));
+    justify-content: center;
+    background-color: rgba(black, 0.1);
+}
+.skill-tile {
+    display: flex;
+    grid-gap: 2rem;
+    border-radius: 1rem;
+    flex-direction: column;
+    justify-content: space-evenly;
+    gap: 8px;
+    padding: 10px;
+    align-items: center;
+    background: rgba(black, 0.55);
+    width: 15rem;
+    height: 110px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.1s;
+
+    &:hover {
+        background: rgba(black, 0.78);
+        backdrop-filter: blur(2px);  // hen you hover the background will be blurry
+    }
+    &:active {  // click effect
+        background: rgba(black, 0.75);
+        transform: translateY(4px);
+        transition-duration: 0s;
+    }
+}
+.skill-tile img {
+    max-width: 45px;
+}
+.tile-text {
+    color: rgba(white, 0.8);
+    font-size: 14px;
+
+    max-width: 100%;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;   // that dot dot for a long text
+}
