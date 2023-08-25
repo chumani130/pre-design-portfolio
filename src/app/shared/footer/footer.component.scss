@@ -1,0 +1,58 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+.footer {
+    display: block;
+    justify-content: center;
+    text-align: center;
+    background-color: rgba(black, 0.5);
+
+    &:hover {
+        background-color: rgba(black, 0.7);
+    }
+}
+
+/* Create a wrapper for the content and footer */
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+}
+
+/* Main content styles */
+.content {
+    flex: 1;
+    /* Add your content styles here */
+}
+
+/* Footer styles */
+footer {
+    
+    color: black;
+    text-align: center;
+    padding: 20px 0;
+}
+
+/* Social links style */
+.social-links {
+    margin: 10px;
+}
+
+.social-links a {
+    color: black;
+    text-decoration: none;
+    margin: 0 10px;
+    font-size: 20px;
+
+    &:hover {
+        background-color: white;
+    }
+}
+
+/* Copyright text style */
+.copyright {
+    font-size: 14px;
+}
