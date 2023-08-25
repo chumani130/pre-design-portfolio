@@ -1,10 +1,6 @@
-*{
-    box-sizing: border-box;
-    padding: 0;
-    margin: 0;
-}
+
 body {
-    position: relative;
+    position: absolute;
     background-color: #f1f2f6;
     width: 100%;
     font-family: 'Open Sans', sans-serif;
@@ -14,7 +10,7 @@ body {
 }
 a {
     text-decoration: none;
-    color: var(#18181b);
+    color: #18181b;
   }
   main {
     display: flex;
@@ -26,9 +22,15 @@ a {
     height: max-content;
     min-width: 100vw;
     min-height: 100vh;
-    background-color: var(#f1f2f6);
+    background-color:#f1f2f6;
     color: black;
     transition: all 0.7s;
   }
+  // h1 {
+  //   font-size: 3rem;
+  //   font-family: "Catamaran", sans-serif;
+  //   margin: 2rem;
+  //   text-align: center;
+  // }
   
  
