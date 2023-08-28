@@ -12,10 +12,10 @@
 
 }
 .card-container {
-  display: grid;
+  display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  align-items: flex-end;
+
 }
 .card-container .card {
   position: relative;
@@ -32,7 +32,7 @@
   box-shadow: rgba(100, 100, 111, 0.2) 0 7px 29px 0;
 }
 .card-container .card p {
-  font-size: 1.4rem;
+  font-size: 10px;
   color: var(--text-gray);
 }
 .card-container .card p span {
