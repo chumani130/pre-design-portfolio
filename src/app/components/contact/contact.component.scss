@@ -4,8 +4,11 @@ main {
     background-repeat: no-repeat;
     background-position: center; /* This property centers the image */
   }
-  .form {
-    gap: 10px;
+  form {
+    background: rgba(white, 0.8);
+    gap: 5px;
+  border-radius: 10px;
+    padding: 30px;
   }
   
 .container {
@@ -15,25 +18,48 @@ main {
     font-size: 18px;
     gap: 20px;
 }
-.icon img{
-    height: 30px;
-    width: 30px;
-}
+
 .number {
-  margin-bottom: 20px;
+  margin: 20px;  
 }
-#name {
-  margin-bottom: 20px;
- 
+.email {
+  margin: 20px;  
+}
+.location {
+  margin: 20px;  
+}
+input {
+  margin: 10px;
+}
+textarea {
+  margin: 10px;
+}
+button {
+  margin: 10px;
+  
+  &:hover {
+    background: rgba(30, 80, 60);
+  }
+  
 }
 .location {
   display: flex;
  
   
 }
-.location img {
-  width: 40px;
-  height: 40px;
+
+img {
+  width:50px;
+  height: 50px;
   margin-right: 10px;
+  // border: 0px;
+  // border-radius: 50%;
+  // background-color: white;
  
 }
+
+.contacts{
+ margin: 20px;
+
+}
+
