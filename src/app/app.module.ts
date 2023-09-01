@@ -12,6 +12,10 @@ import { EducationComponent } from './components/education/education.component';
 import { ExperienceComponent } from './components/experience/experience.component';
 import { ContactComponent } from './components/contact/contact.component';
 import { FooterComponent } from './shared/footer/footer.component';
+import {ReactiveFormsModule} from "@angular/forms";
+import {AngularFireModule} from "@angular/fire/compat";
+import {BrowserAnimationsModule} from "@angular/platform-browser/animations";
+import {environment} from "../environments/environment";
 
 @NgModule({
   declarations: [
@@ -28,7 +32,12 @@ import { FooterComponent } from './shared/footer/footer.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    AppRoutingModule,
+    BrowserAnimationsModule,
+    ReactiveFormsModule,
+    AngularFireModule.initializeApp(environment.firebase),
+
   ],
   providers: [],
   bootstrap: [AppComponent]
