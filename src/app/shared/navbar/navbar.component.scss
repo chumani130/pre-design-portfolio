@@ -1,118 +1,118 @@
 
+// // .navbar {
+// //   // position: fixed;
+// //   width: 100%;
+// //   display: flex;
+// //   justify-content: space-between;
+// //   align-items: center;
+// //   // background: linear-gradient(45deg, #8b80aa, #333335);
+// //   background-color: white;
+// //   border: 1px solid;
+// //   padding: 15px;
+// //   box-shadow: 5px 10px #888888;
+// //   margin: 0;
+// //   padding-right: 30px;
+// //   padding-left: 30px;
+
+// // }
 // .navbar {
-//   // position: fixed;
-//   width: 100%;
 //   display: flex;
 //   justify-content: space-between;
 //   align-items: center;
-//   // background: linear-gradient(45deg, #8b80aa, #333335);
+//   padding: 10px 20px;
 //   background-color: white;
-//   border: 1px solid;
-//   padding: 15px;
-//   box-shadow: 5px 10px #888888;
-//   margin: 0;
-//   padding-right: 30px;
-//   padding-left: 30px;
-
 // }
-.navbar {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 10px 20px;
-  background-color: white;
-}
 
-img.mylogo {
-  max-width: 60px;
-  height: auto;
-  border-radius: 10px;
-}
-.icon {
-  display: flex;
-  padding: 10px;
-  margin: 0 10px;
-  cursor: pointer;
-  z-index: 1;
-  border-radius : 50%;
-  // background-color: rgb(109, 108, 108);
-  background-color: #66676c;
+// img.mylogo {
+//   max-width: 60px;
+//   height: auto;
+//   border-radius: 10px;
+// }
+// .icon {
+//   display: flex;
+//   padding: 10px;
+//   margin: 0 10px;
+//   cursor: pointer;
+//   z-index: 1;
+//   border-radius : 50%;
+//   // background-color: rgb(109, 108, 108);
+//   background-color: #66676c;
 
 
-  img {
-      color: #222;
-      width: 25px;
-      &:hover {
-      transition: 1s ease-out;
-    }
-  }
+//   img {
+//       color: #222;
+//       width: 25px;
+//       &:hover {
+//       transition: 1s ease-out;
+//     }
+//   }
  
 
-  transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 2);
-}
-.icon:hover{
-  transform: scale(1.5);
-  background-color: #333335;
-  opacity: 1;
-}
-.icon:active {
-  transform: scale(1.5);
-  background: #8b80aa;
-  opacity: 1;
-}
-.icons {
-  display: flex;
-  align-items: center;
-  // justify-content: center;
-  // gap: 9px;
-  // padding: 0;
-  // margin: 0
+//   transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 2);
+// }
+// .icon:hover{
+//   transform: scale(1.5);
+//   background-color: #333335;
+//   opacity: 1;
+// }
+// .icon:active {
+//   transform: scale(1.5);
+//   background: #8b80aa;
+//   opacity: 1;
+// }
+// .icons {
+//   display: flex;
+//   align-items: center;
+//   // justify-content: center;
+//   // gap: 9px;
+//   // padding: 0;
+//   // margin: 0
   
-}
-icons a {
-    color: #fff;
-    padding: 12px;
-    display: block;
-    text-decoration: none;
-}
-@media screen and (max-width: 768px) {
-  .icons {
-    display: none; /* Hide icons by default on smaller screens */
-    flex-direction: column;
-    position: absolute;
-    top: 60px;
-    left: 0;
-    width: 100%;
-    background-color: #333;
-    z-index: 1;
-  }
+// }
+// icons a {
+//     color: #fff;
+//     padding: 12px;
+//     display: block;
+//     text-decoration: none;
+// }
+// @media screen and (max-width: 768px) {
+//   .icons {
+//     display: none; /* Hide icons by default on smaller screens */
+//     flex-direction: column;
+//     position: absolute;
+//     top: 60px;
+//     left: 0;
+//     width: 100%;
+//     background-color: #333;
+//     z-index: 1;
+//   }
 
-  .icons.active {
-    display: flex; /* Show icons when active class is applied */
-  }
+//   .icons.active {
+//     display: flex; /* Show icons when active class is applied */
+//   }
 
-  .toggle-button {
-    display: block;
-    cursor: pointer;
-  }
+//   .toggle-button {
+//     display: block;
+//     cursor: pointer;
+//   }
 
-  .bar {
-    width: 25px;
-    height: 3px;
-    background-color: #fff;
-    margin: 4px 0;
-    transition: 0.4s;
-  }
+//   .bar {
+//     width: 25px;
+//     height: 3px;
+//     background-color: #fff;
+//     margin: 4px 0;
+//     transition: 0.4s;
+//   }
 
-  .toggle-button.active .bar:nth-child(1) {
-    transform: rotate(-45deg) translate(-5px, 6px);
-  }
+//   .toggle-button.active .bar:nth-child(1) {
+//     transform: rotate(-45deg) translate(-5px, 6px);
+//   }
 
-  .toggle-button.active .bar:nth-child(2) {
-    opacity: 0;
-  }
+//   .toggle-button.active .bar:nth-child(2) {
+//     opacity: 0;
+//   }
 
-  .toggle-button.active .bar:nth-child(3) {
-    transform: rotate(45deg) translate(-5px, -6px);
-  }
-}
+//   .toggle-button.active .bar:nth-child(3) {
+//     transform: rotate(45deg) translate(-5px, -6px);
+//   }
+// }
