@@ -1,53 +1,75 @@
-<div class="navbar">
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <img 
+      src="https://i.ibb.co/p17MnhT/Black-And-White-Globe-Y2k-Streetwear-Logo.png"
+      height="58px"
 
-  <div class="logo">
-    <img src="https://i.ibb.co/p17MnhT/Black-And-White-Globe-Y2k-Streetwear-Logo.png" alt="Logo" class="mylogo">
+      alt="my-logo"
+      loading="lazy"
+      style="margin-top: -1px;"
+      class="navbar-brand me-2"
+    />
+        <!-- Toggle button -->
+        <button
+        class="navbar-toggler"
+        type="button"
+        (click)="buttonsNav.toggle()"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <i class="fas fa-bars"></i>
+      </button>
+  
+      <!-- Collapsible wrapper -->
+      <div
+        class="collapse navbar-collapse"
+        id="navbarButtonsExample"
+        mdbCollapse
+        #buttonsNav="mdbCollapse"
+      >
+        <!-- Left links -->
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link" href="#">CHUMZ</a>
+          </li>
+        </ul>
+        <!-- Left links -->
+
+  <div class="d-flex align-items-center">
+    <a routerLink="/home" 
+          class="btn btn-white px-auto shadow-5-strong "
+          role="button">
+          <img src="https://img.icons8.com/ios/50/home--v1.png" width="26px" alt="home" title="Home"/>
+        </a>
+        <a routerLink="/about"
+          class="btn btn-white px-auto shadow-5-strong"
+          role="button">
+          <img src="https://img.icons8.com/ios/50/about.png" width="26px" alt="about" title="About"/>
+        </a>
+        <a routerLink="/skills"
+        class="btn btn-white px-auto shadow-5-strong"
+        role="button">
+        <img src="https://img.icons8.com/dotty/80/admin-settings-male.png" width="26px" alt="skills" title="Skills"/>
+      </a>
+      <a  routerLink="/projects"
+      class="btn btn-white px-auto shadow-5-strong"
+      role="button">
+      <img src="https://img.icons8.com/ios/50/group-of-projects.png" width="26px" alt="projects" title="Projects"/>
+    </a>
+    <a routerLink="/education"
+          class="btn btn-white px-auto shadow-5-strong"
+          role="button">
+          <img src="https://img.icons8.com/dotty/80/education.png" width="26px" alt="education" title="Education"/>
+        </a>
+        <a routerLink="/experience"
+          class="btn btn-white px-auto shadow-5-strong"
+          role="button">
+          <img src="https://img.icons8.com/dotty/80/customer-insight.png" width="26px" alt="experience" title="Experience"/>
+        </a>
+        <a routerLink="/contact"
+          class="btn btn-white px-auto shadow-5-strong"
+          role="button">
+          <img src="https://img.icons8.com/ios/50/000000/contact-card.png" width="26px" alt="Contact" title="Contact"/>
+        </a>
   </div>
-
-  <div class="toggle-button" (click)="toggleNavbar()">
-    <div class="bar"></div>
-    <div class="bar"></div>
-    <div class="bar"></div>
-  </div>
-
-  <div class="icons" [ngClass]="{'active': isNavbarActive}">
-    <a routerLink="/home" class="home" (click)="closeNavbar()">
-      <div class="icon">
-        <img src="https://img.icons8.com/ios/50/home--v1.png" alt="home" title="Home"/>
-      </div>
-    </a>
-    <a routerLink="/about" class="about" (click)="closeNavbar()">
-      <div class="icon">
-        <img src="https://img.icons8.com/ios/50/about.png" alt="about" title="About"/>
-      </div>
-    </a>
-    <a routerLink="/skills" class="skills" (click)="closeNavbar()">
-      <div class="icon">
-        <img src="https://img.icons8.com/dotty/80/admin-settings-male.png" alt="skills" title="Skills"/>
-      </div>
-    </a>
-    <a routerLink="/projects" class="projects" (click)="closeNavbar()">
-      <div class="icon">
-        <img src="https://img.icons8.com/ios/50/group-of-projects.png" alt="projects" title="Projects"/>
-    </div>
-    </a>
-    <a routerLink="/education" class="education" (click)="closeNavbar()">
-      <div class="icon">
-        <img src="https://img.icons8.com/dotty/80/education.png" alt="education" title="Education"/>
-      </div>
-    </a>
-    <a routerLink="/experience" class="experience" (click)="closeNavbar()">
-      <div class="icon">
-        <img src="https://img.icons8.com/dotty/80/customer-insight.png" alt="experience" title="Experience"/>
-      </div>
-    </a>
-    <a routerLink="/contact" class="contact" (click)="closeNavbar()">
-      <div class="icon">
-        <img src="https://img.icons8.com/ios/50/000000/contact-card.png" alt="contact" title="Contact"/>
-      </div>
-    </a>
-  </div>
-</div>
-
   
   
