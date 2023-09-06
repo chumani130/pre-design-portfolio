@@ -14,7 +14,10 @@
                 <textarea class="form-control" formControlName="comment" name="Comment" placeholder="Your Message" >
                 </textarea>
             </div>
-            <button type="submit" class="btn btn-secondary" (click)="saveContactDetails()">Submit</button>
+            <div class="d-grid gap-2 col-6 mx-auto">
+                <button class="btn btn-primary" type="submit" mdbRipple (click)="saveContactDetails()">Submit</button>
+              </div>
+            <!-- <button type="submit" class="btn btn-secondary" (click)="saveContactDetails()">Submit</button> -->
             </form>
 
         </div>
