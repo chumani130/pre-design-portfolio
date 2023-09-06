@@ -139,3 +139,64 @@
 //         width: 100px;
 //     }
 // }
+
+/* Custom CSS class for styling the button */
+.custom-twitter-button {
+  /* Add your custom styles here */
+  background-color: #00acee; /* Twitter blue color */
+  color: #ffffff; /* White text color */
+  border: none; /* Remove border */
+  border-radius: 50%; /* Make it round */
+  padding: 10px; /* Adjust padding as needed */
+  text-decoration: none; /* Remove underlines */
+}
+
+
+.custom-facebook-button {
+  /* Add your custom styles here */
+  background-color: rgb(43, 43, 180); 
+  color: #ffffff; /* White text color */
+  border: none; /* Remove border */
+  border-radius: 50%; /* Make it round */
+  padding: 10px; /* Adjust padding as needed */
+  text-decoration: none; /* Remove underlines */
+}
+
+.custom-google-button {
+  /* Add your custom styles here */
+  background-color: orangered; 
+  border: none; /* Remove border */
+  border-radius: 50%; /* Make it round */
+  padding: 10px; /* Adjust padding as needed */
+  text-decoration: none; /* Remove underlines */
+}
+.custom-google-button i.fab.fa-google {
+  color: white;
+}
+.custom-linkdin-button {
+  /* Add your custom styles here */
+  background-color: #00acee; 
+  color: #ffffff; /* White text color */
+  border: none; /* Remove border */
+  border-radius: 50%; /* Make it round */
+  padding: 10px; /* Adjust padding as needed */
+  text-decoration: none; /* Remove underlines */
+}
+.custom-github-button {
+  /* Add your custom styles here */
+  background-color: #00acee; 
+  color: #ffffff; /* White text color */
+  border: none; /* Remove border */
+  border-radius: 50%; /* Make it round */
+  padding: 10px; /* Adjust padding as needed */
+  text-decoration: none; /* Remove underlines */
+}
+.custom-instagram-button {
+  /* Add your custom styles here */
+  background-color: #00acee; 
+  color: #ffffff; /* White text color */
+  border: none; /* Remove border */
+  border-radius: 50%; /* Make it round */
+  padding: 10px; /* Adjust padding as needed */
+  text-decoration: none; /* Remove underlines */
+}
