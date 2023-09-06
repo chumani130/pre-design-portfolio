@@ -1,20 +1,28 @@
 
+// .navbar {
+//   // position: fixed;
+//   width: 100%;
+//   display: flex;
+//   justify-content: space-between;
+//   align-items: center;
+//   // background: linear-gradient(45deg, #8b80aa, #333335);
+//   background-color: white;
+//   border: 1px solid;
+//   padding: 15px;
+//   box-shadow: 5px 10px #888888;
+//   margin: 0;
+//   padding-right: 30px;
+//   padding-left: 30px;
+
+// }
 .navbar {
-  // position: fixed;
-  width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  // background: linear-gradient(45deg, #8b80aa, #333335);
+  padding: 10px 20px;
   background-color: white;
-  border: 1px solid;
-  padding: 15px;
-  box-shadow: 5px 10px #888888;
-  margin: 0;
-  padding-right: 30px;
-  padding-left: 30px;
-
 }
+
 img.mylogo {
   max-width: 60px;
   height: auto;
@@ -23,6 +31,7 @@ img.mylogo {
 .icon {
   display: flex;
   padding: 10px;
+  margin: 0 10px;
   cursor: pointer;
   z-index: 1;
   border-radius : 50%;
@@ -54,8 +63,8 @@ img.mylogo {
 .icons {
   display: flex;
   align-items: center;
-  justify-content: center;
-  gap: 9px;
+  // justify-content: center;
+  // gap: 9px;
   // padding: 0;
   // margin: 0
   
@@ -66,53 +75,44 @@ icons a {
     display: block;
     text-decoration: none;
 }
-  
-  
-  // @media screen and (max-width: 767px) {
-  //   // .container {
-  //   //   max-width: 720px;
-  //   // }
-    
-  //   .site-navbar {
-  //     min-height: 60px;
-  //   }
-  //   .site-navbar ul {
-  //     position: absolute;
-  //     width: 100%;
-  //     height: calc(100vh - 60px);
-  //     left: 0;
-  //     top: 60px;
-  //     flex-direction: column;
-  //     align-items: center;
-  //     background-color: rgba(0,0,0,.75);
-  //     max-height: 0;
-  //     overflow: hidden;
-  //     transition: .3s;
-  //   }
-  //   .site-navbar ul li {
-  //     width: 100%;
-  //     text-align: center;
-  //   }
-  //   .site-navbar ul li a {
-  //     padding: 25px;
-  //   }
-  //   .site-navbar ul li a:hover {
-  //     background-color: rgba(255,255,255,.1);
-  //   }
-  //   .site-navbar ul.open {
-  //     max-height: 100vh;
-  //     overflow: visible;
-  //   }
-  // }
-  
-  
-  
-  
-  
-  // .header-area {
-  //     background: linear-gradient(rgba(0,0,0,.3), rgba(0,0,0,.5)),
-  //     url(https://images.unsplash.com/photo-1528353518104-dbd48bee7bc4?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2089&q=80);
-  //     background-position: center center;
-  //     background-size: cover;
-  //   }  when you are applyin a background on a contact page
-  
+@media screen and (max-width: 768px) {
+  .icons {
+    display: none; /* Hide icons by default on smaller screens */
+    flex-direction: column;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    width: 100%;
+    background-color: #333;
+    z-index: 1;
+  }
+
+  .icons.active {
+    display: flex; /* Show icons when active class is applied */
+  }
+
+  .toggle-button {
+    display: block;
+    cursor: pointer;
+  }
+
+  .bar {
+    width: 25px;
+    height: 3px;
+    background-color: #fff;
+    margin: 4px 0;
+    transition: 0.4s;
+  }
+
+  .toggle-button.active .bar:nth-child(1) {
+    transform: rotate(-45deg) translate(-5px, 6px);
+  }
+
+  .toggle-button.active .bar:nth-child(2) {
+    opacity: 0;
+  }
+
+  .toggle-button.active .bar:nth-child(3) {
+    transform: rotate(45deg) translate(-5px, -6px);
+  }
+}

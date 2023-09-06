@@ -1,39 +1,47 @@
 <div class="navbar">
+
   <div class="logo">
     <img src="https://i.ibb.co/p17MnhT/Black-And-White-Globe-Y2k-Streetwear-Logo.png" alt="Logo" class="mylogo">
   </div>
-  <div class="icons">
-    <a routerLink="/home" class="home">
+
+  <div class="toggle-button" (click)="toggleNavbar()">
+    <div class="bar"></div>
+    <div class="bar"></div>
+    <div class="bar"></div>
+  </div>
+
+  <div class="icons" [ngClass]="{'active': isNavbarActive}">
+    <a routerLink="/home" class="home" (click)="closeNavbar()">
       <div class="icon">
         <img src="https://img.icons8.com/ios/50/home--v1.png" alt="home" title="Home"/>
       </div>
     </a>
-    <a routerLink="/about" class="about">
+    <a routerLink="/about" class="about" (click)="closeNavbar()">
       <div class="icon">
         <img src="https://img.icons8.com/ios/50/about.png" alt="about" title="About"/>
       </div>
     </a>
-    <a routerLink="/skills" class="skills">
+    <a routerLink="/skills" class="skills" (click)="closeNavbar()">
       <div class="icon">
         <img src="https://img.icons8.com/dotty/80/admin-settings-male.png" alt="skills" title="Skills"/>
       </div>
     </a>
-    <a routerLink="/projects" class="projects">
+    <a routerLink="/projects" class="projects" (click)="closeNavbar()">
       <div class="icon">
         <img src="https://img.icons8.com/ios/50/group-of-projects.png" alt="projects" title="Projects"/>
     </div>
     </a>
-    <a routerLink="/education" class="education">
+    <a routerLink="/education" class="education" (click)="closeNavbar()">
       <div class="icon">
         <img src="https://img.icons8.com/dotty/80/education.png" alt="education" title="Education"/>
       </div>
     </a>
-    <a routerLink="/experience" class="experience">
+    <a routerLink="/experience" class="experience" (click)="closeNavbar()">
       <div class="icon">
         <img src="https://img.icons8.com/dotty/80/customer-insight.png" alt="experience" title="Experience"/>
       </div>
     </a>
-    <a routerLink="/contact" class="contact">
+    <a routerLink="/contact" class="contact" (click)="closeNavbar()">
       <div class="icon">
         <img src="https://img.icons8.com/ios/50/000000/contact-card.png" alt="contact" title="Contact"/>
       </div>
