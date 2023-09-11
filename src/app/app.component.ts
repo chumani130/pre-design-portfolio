@@ -16,26 +16,26 @@ export class AppComponent implements OnInit {
   }
   scrollToHome() {
     document.getElementById("home")?.scrollIntoView();
-    const homeId =  document.getElementById("home")?.scrollIntoView();
+    const homeId =  document.getElementById("home")?.scrollIntoView({behavior: "smooth"});
     console.log(homeId)
   }
   scrollToAbout() {
-    document.getElementById("about")?.scrollIntoView();
+    document.getElementById("about")?.scrollIntoView({behavior: "smooth"});
   }
   scrollToSkills() {
-    document.getElementById("skills")?.scrollIntoView();
+    document.getElementById("skills")?.scrollIntoView({behavior: "smooth"});
   }
   scrollToProjects() {
-    document.getElementById("projects")?.scrollIntoView();
+    document.getElementById("projects")?.scrollIntoView({behavior: "smooth"});
   }
   scrollToEducation() {
-    document.getElementById("education")?.scrollIntoView();
+    document.getElementById("education")?.scrollIntoView({behavior: "smooth"});
   }
   scrollToExperience() {
-    document.getElementById("experience")?.scrollIntoView();
+    document.getElementById("experience")?.scrollIntoView({behavior: "smooth"});
   }
   scrollToContact() {
-    document.getElementById("contact")?.scrollIntoView();
+    document.getElementById("contact")?.scrollIntoView({behavior: "smooth"});
   }
   
 }
