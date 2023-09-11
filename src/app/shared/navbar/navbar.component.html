@@ -32,41 +32,57 @@
         <!-- Left links -->
 
   <div class="d-md-flex align-items-center">
-    <a href="#home" 
-          class="btn btn-white px-auto shadow-5-strong "
-          role="button">
-          <img src="https://img.icons8.com/ios/50/home--v1.png" width="36px" alt="home" title="Home"/>
-        </a>
-        <a href="#about"
-          class="btn btn-white px-auto shadow-5-strong"
-          role="button">
-          <img src="https://img.icons8.com/ios/50/about.png" width="36px" alt="about" title="About"/>
-        </a>
-        <a href="#skills"
-        class="btn btn-white px-auto shadow-5-strong"
-        role="button">
-        <img src="https://img.icons8.com/dotty/80/admin-settings-male.png" width="36px" alt="skills" title="Skills"/>
-      </a>
-      <a  href="#projects"
+    <a
+      (click)="scrollToHome()" 
+      class="btn btn-white px-auto shadow-5-strong "
+      role="button"
+      id="home">
+      <img src="https://img.icons8.com/ios/50/home--v1.png" width="36px" alt="home" title="Home"/>
+    </a>
+    <a
+      (click)="scrollToAbout()"
       class="btn btn-white px-auto shadow-5-strong"
-      role="button">
+      role="button"
+      id="about">
+      <img src="https://img.icons8.com/ios/50/about.png" width="36px" alt="about" title="About"/>
+    </a>
+    <a
+      (click)="scrollToSkills()"
+      class="btn btn-white px-auto shadow-5-strong"
+      role="button"
+      id="skills">
+      <img src="https://img.icons8.com/dotty/80/admin-settings-male.png" width="36px" alt="skills" title="Skills"/>
+    </a>
+    <a  href="#projects"
+      (click)="scrollToProjects()"
+      class="btn btn-white px-auto shadow-5-strong"
+      role="button"
+      id="projects">
       <img src="https://img.icons8.com/ios/50/group-of-projects.png" width="36px" alt="projects" title="Projects"/>
     </a>
-    <a href="#education"
-          class="btn btn-white px-auto shadow-5-strong"
-          role="button">
-          <img src="https://img.icons8.com/dotty/80/education.png" width="36px" alt="education" title="Education"/>
-        </a>
-        <a routerLink="/experience"
-          class="btn btn-white px-auto shadow-5-strong"
-          role="button">
-          <img src="https://img.icons8.com/dotty/80/customer-insight.png" width="36px" alt="experience" title="Experience"/>
-        </a>
-        <a routerLink="/contact"
-          class="btn btn-white px-auto shadow-5-strong"
-          role="button">
-          <img src="https://img.icons8.com/ios/50/000000/contact-card.png" width="36px" alt="Contact" title="Contact"/>
-        </a>
+    <a
+      (click)="scrollToEducation()"
+      class="btn btn-white px-auto shadow-5-strong"
+      role="button"
+      id="education">
+      <img src="https://img.icons8.com/dotty/80/education.png" width="36px" alt="education" title="Education"/>
+    </a>
+    <a
+      (click)="scrollToExperience()"
+      class="btn btn-white px-auto shadow-5-strong"
+      role="button"
+      id="experience">
+      <img src="https://img.icons8.com/dotty/80/customer-insight.png" width="36px" alt="experience" title="Experience"/>
+    </a>
+    <a
+      (click)="scrollToContact()"
+      class="btn btn-white px-auto shadow-5-strong"
+      role="button"
+      id="contact">
+      <img src="https://img.icons8.com/ios/50/000000/contact-card.png" width="36px" alt="Contact" title="Contact"/>
+    </a>
   </div>
+  </div>
+</nav>
   
   
