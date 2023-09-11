@@ -13,46 +13,46 @@ import { ContactComponent } from './components/contact/contact.component';
 
 
 const routes: Routes = [
-  {
-    path: '',
-    pathMatch: 'full',
-    redirectTo: 'home'
-  },
-  {
-     path: 'home', 
-     component: HomeComponent,
-     title: 'Home Page'
-  },
-  { 
-    path: 'about', 
-    component: AboutComponent,
-    title: 'About Page'
-  },
-  {
-    path: 'skills', 
-    component: SkillsComponent,
-    title: 'Skills Page' 
-  },
-  {
-   path: 'projects', 
-   component: ProjectsComponent,
-   title: 'Projects Page'
-  },
-  { 
-    path: 'education', 
-    component: EducationComponent,
-    title: 'Education Page' 
-  },
-  { 
-    path: 'experience', 
-    component: ExperienceComponent, 
-    title: 'Experience Page' 
-  },
-  { 
-    path: 'contact', 
-    component: ContactComponent,
-    title: 'Contact'
-  },
+  // {
+  //   path: '',
+  //   pathMatch: 'full',
+  //   redirectTo: 'home'
+  // },
+  // {
+  //    path: 'home', 
+  //    component: HomeComponent,
+  //    title: 'Home Page'
+  // },
+  // { 
+  //   path: 'about', 
+  //   component: AboutComponent,
+  //   title: 'About Page'
+  // },
+  // {
+  //   path: 'skills', 
+  //   component: SkillsComponent,
+  //   title: 'Skills Page' 
+  // },
+  // {
+  //  path: 'projects', 
+  //  component: ProjectsComponent,
+  //  title: 'Projects Page'
+  // },
+  // { 
+  //   path: 'education', 
+  //   component: EducationComponent,
+  //   title: 'Education Page' 
+  // },
+  // { 
+  //   path: 'experience', 
+  //   component: ExperienceComponent, 
+  //   title: 'Experience Page' 
+  // },
+  // { 
+  //   path: 'contact', 
+  //   component: ContactComponent,
+  //   title: 'Contact'
+  // },
 ];
 
 
