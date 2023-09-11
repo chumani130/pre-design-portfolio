@@ -1,8 +1,7 @@
-
 <div class="row">
     <div class="col-md-12">
-        <nav class="navbar navbar-expand-lg navbar-light bg-light" style=" padding: 10px;">
-            <img 
+        <nav class="navbar navbar-expand-lg navbar-light bg-light" style=" padding: 10px; position: fixed;">
+            <img
               src="https://i.ibb.co/p17MnhT/Black-And-White-Globe-Y2k-Streetwear-Logo.png"
               height="58px"
               style=" padding-left: 20px;"
@@ -18,7 +17,7 @@
                 aria-label="Toggle navigation">
                 <i class="fas fa-bars"></i>
               </button>
-          
+
               <!-- Collapsible wrapper -->
               <div
                 class="collapse navbar-collapse"
@@ -33,62 +32,55 @@
                   </li>
                 </ul>
                 <!-- Left links -->
-        
+
           <div class="d-md-flex align-items-center">
             <a
-              (click)="scrollToHome()" 
+              (click)="scrollToHome()"
               class="btn btn-white px-auto shadow-5-strong "
-              role="button"
-              id="home">
+              role="button">
               <img src="https://img.icons8.com/ios/50/home--v1.png" width="36px" alt="home" title="Home"/>
             </a>
             <a
               (click)="scrollToAbout()"
               class="btn btn-white px-auto shadow-5-strong"
-              role="button"
-              id="about">
+              role="button">
               <img src="https://img.icons8.com/ios/50/about.png" width="36px" alt="about" title="About"/>
             </a>
             <a
               (click)="scrollToSkills()"
               class="btn btn-white px-auto shadow-5-strong"
-              role="button"
-              id="skills">
+              role="button">
               <img src="https://img.icons8.com/dotty/80/admin-settings-male.png" width="36px" alt="skills" title="Skills"/>
             </a>
-            <a  href="#projects"
+            <a 
               (click)="scrollToProjects()"
               class="btn btn-white px-auto shadow-5-strong"
-              role="button"
-              id="projects">
+              role="button">
               <img src="https://img.icons8.com/ios/50/group-of-projects.png" width="36px" alt="projects" title="Projects"/>
             </a>
             <a
               (click)="scrollToEducation()"
               class="btn btn-white px-auto shadow-5-strong"
-              role="button"
-              id="education">
+              role="button">
               <img src="https://img.icons8.com/dotty/80/education.png" width="36px" alt="education" title="Education"/>
             </a>
             <a
               (click)="scrollToExperience()"
               class="btn btn-white px-auto shadow-5-strong"
-              role="button"
-              id="experience">
+              role="button">
               <img src="https://img.icons8.com/dotty/80/customer-insight.png" width="36px" alt="experience" title="Experience"/>
             </a>
             <a
               (click)="scrollToContact()"
               class="btn btn-white px-auto shadow-5-strong"
-              role="button"
-              id="contact">
+              role="button">
               <img src="https://img.icons8.com/ios/50/000000/contact-card.png" width="36px" alt="Contact" title="Contact"/>
             </a>
           </div>
-          
+
           </div>
           </nav>
-        
+
     </div>
 </div>
 <div id="home">
@@ -100,16 +92,16 @@
 <div id="skills" >
     <app-skills></app-skills>
 </div>
-<div id="#project" >
+<div id="projects" >
     <app-projects></app-projects>
 </div>
-<div id="#education" >
+<div id="education" >
     <app-education></app-education>
 </div>
-<div id="#about" >
+<div id="experience" >
     <app-experience></app-experience>
 </div>
-<div id="#about" >
+<div id="contact" >
     <app-contact></app-contact>
 </div>
 <footer class="footer">
