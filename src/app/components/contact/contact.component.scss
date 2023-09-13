@@ -17,7 +17,7 @@
   position: relative !important;
   left: 450px;
   top: 50px;
-  height: 100px;
+  height: 150px;
   padding-bottom: 100px !important;
   background-color: whitesmoke;
   border-radius: 20px;
@@ -54,6 +54,7 @@ border: 2px solid #555;
   }
 
   .row-last {
+    position: fixed;
       left: 0 !important;
       width: 100% !important;
       height: 500px !important;
