@@ -3,18 +3,18 @@
 
         <div class="col-md-6 first_col ">
             <h1 class="text-center mt-3">Contact Me</h1>
-            <form [formGroup]="contactForm" class="p-4 mt-3">
+            <form [formGroup]="contactForm" class="p-4 mt-3" (ngSubmit)="saveContactDetails()">
                 <div class="mb-3" form-group>
-                    <label for="Input1" class="form-label">Name</label>
-                    <input type="text" class="form-control" id="name" name="Fullname" placeholder="Enter Your Name" formControlName="FullName" required>
+                    <label for="name" class="form-label">Name: </label>
+                    <input type="text" class="form-control" id="name" placeholder="Enter Your Name" formControlName="FullName" required>
                 </div>
                 <div class="mb-3" form-group>
-                    <label for="Input2" class="form-label">Email</label>
-                    <input type="text" class="form-control" id="Email" aria-describedby="emailHelp" placeholder="Enter Email" formControlName="email" required>
+                    <label for="email" class="form-label">Email: </label>
+                    <input type="text" class="form-control" id="email" aria-describedby="emailHelp" placeholder="Enter Email" formControlName="email" required>
                 </div>
                 <div class="mb-3" form-group>
-                    <label for="Textarea" class="form-label">Enter your massage</label>
-                    <textarea  type="text" class="form-control" id="text" formControlName="comment" name="comment" placeholder="Enter Your Message" rows="3"></textarea>
+                    <label for="Textarea" class="form-label">Enter your massage: </label>
+                    <textarea  type="text" class="form-control" id="text" formControlName="message" name="message" placeholder="Enter Your Message" rows="3"></textarea>
                 </div>
                 <div class="mb-3">
                     <button class="btn btn-primary" type="submit" mdbRipple (click)="saveContactDetails()">Send Now</button>
@@ -27,11 +27,13 @@
         </div>
     </div>
     <div class="row-last">
+        <br />
         <div class="row row-cols-1 row-cols-md-2  p-3 text-dark">
             <div class="col">
                 <h4>LOCATION</h4>
                 <p>Kuilsriver, Cape Town </p>
             </div>
+            <br />
             <div class="col">
                 <h4>Email</h4>
                 <p>chumanimadikizela@gmail.com</p>
