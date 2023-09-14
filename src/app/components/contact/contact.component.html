@@ -1,27 +1,48 @@
-<main>
-    <h1 class="text-center mb-5">Contact Me</h1>
-    <div class="container">
+<div class="container py-4">
+    <div class="row py-4 g-3">
 
-        <div class="col-md-4 offset-md-2">
-            <form [formGroup]="contactForm">
-            <div class="form-group">
-                <input type="text" id="name" class="form-control" name="Fullname" placeholder="Name" formControlName="fullName" required="Enter your Name">
-            </div>
-            <div class="form-group">
-                <input type="email" class="form-control" name="Email" aria-describedby="emailHelp" placeholder="Enter email"formControlName="email" required="Enter your Email">
-            </div>
-            <div class="form-group">
-                <textarea class="form-control" formControlName="comment" name="Comment" placeholder="Your Message" >
-                </textarea>
-            </div>
-            <div class="d-grid gap-2 col-6 mx-auto">
-                <button class="btn btn-primary" type="submit" mdbRipple (click)="saveContactDetails()">Submit</button>
-              </div>
-            <!-- <button type="submit" class="btn btn-secondary" (click)="saveContactDetails()">Submit</button> -->
+        <div class="col-md-6 first_col ">
+            <h1 class="text-center mt-3">Contact Me</h1>
+            <form [formGroup]="contactForm" class="p-4 mt-6" (ngSubmit)="saveContactDetails()">
+                <div class="mb-3" form-group>
+                    <label for="name" class="form-label">Name: </label>
+                    <input type="text" class="form-control" id="name" placeholder="Enter Your Name" formControlName="FullName" required>
+                </div>
+                <div class="mb-3" form-group>
+                    <label for="email" class="form-label">Email: </label>
+                    <input type="text" class="form-control" id="email" aria-describedby="emailHelp" placeholder="Enter Email" formControlName="email" required>
+                </div>
+                <div class="mb-3" form-group>
+                    <label for="Textarea" class="form-label">Enter your massage: </label>
+                    <textarea  type="text" class="form-control" id="text" formControlName="message" name="message" placeholder="Enter Your Message" rows="3" required></textarea>
+                </div>
+                <div class="mb-3">
+                    <button class="btn btn-primary" type="submit" mdbRipple (click)="saveContactDetails()">Send Now</button>
+                </div>
             </form>
-
         </div>
-        <div class="contacts">
+        <div class="col-md-6 sec_col">
+            <img src="https://i.ibb.co/rp1jjYB/dariusz-sankowski-3-Oi-YMg-DKJ6k-unsplash.jpg"
+                class="img-fluid">
+        </div>
+    </div>
+    <div class="row-last">
+        <br />
+        <div class="row row-cols-1 row-cols-md-2  p-3 text-dark">
+            <div class="col">
+                <h4>LOCATION</h4>
+                <p>Kuilsriver, Cape Town </p>
+            </div>
+            <br />
+            <div class="col">
+                <h4>Email</h4>
+                <p>chumanimadikizela@gmail.com</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+        <!-- <div class="contacts">
             <div class="number">
                 <img src="https://img.icons8.com/flat-round/64/phone.png" alt="phone"/>
                 076 334 8795
@@ -34,6 +55,5 @@
                 <img src="https://img.icons8.com/fluency/96/place-marker.png" alt="place-marker"/>
                 17 king Arthue avenue <br> Camelot, Kuilsriver, Cape Town 7580
             </div>
-        </div>
-    </div>
-</main>
+        </div> -->
+<!-- </main> -->
