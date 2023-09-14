@@ -4,12 +4,16 @@
 .pad-to-zero{padding: 0,0,0,0;}
 
 .active {
-    width: 100px;
-    height: 100px;
     background-color:#caccd4;
     img {
         align-items: center;
     }
+    .menu {
+        padding: 0 0.7rem;
+    }
+}
+p {
+    font-size:xx-small;
 }
 
 // header {
