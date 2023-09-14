@@ -192,3 +192,13 @@ p {
 .social-links .behance:focus {
   background-color: var(--dark-gray);
 }
+
+@media only screen and (max-width: 1024px) {
+  .my-pic {
+    width: 100px;
+    height: 220px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-right: 20px;
+}
+}
