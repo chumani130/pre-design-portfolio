@@ -33,49 +33,50 @@
         <!-- Left links -->
 
         <div class="d-md-flex align-items-center">
-          <a routerLink=""
-            routerLinkActive="active"
+          <a routerLink="/"
+            routerLinkActive="active" 
+            [routerLinkActiveOptions]={exact:true}
             (click)="scrollToHome()"
             class="btn btn-white px-auto shadow-5-strong home"
             role="button">
             <img src="https://img.icons8.com/ios/50/home--v1.png" width="36px" alt="home" title="Home"/>
           </a>
-          <a routerLink=""
+          <a routerLink="/about"
             routerLinkActive="active"
             (click)="scrollToAbout()"
             class="btn btn-white px-auto shadow-5-strong"
             role="button">
             <img src="https://img.icons8.com/ios/50/about.png" width="36px" alt="about" title="About"/>
           </a>
-          <a routerLink=""
+          <a routerLink="/skills"
             [routerLinkActive]="'active'"
             (click)="scrollToSkills()"
             class="btn btn-white px-auto shadow-5-strong"
             role="button">
             <img src="https://img.icons8.com/dotty/80/admin-settings-male.png" width="36px" alt="skills" title="Skills"/>
           </a>
-          <a routerLink=""
+          <a routerLink="/projects"
             [routerLinkActive]="'active'"
             (click)="scrollToProjects()"
             class="btn btn-white px-auto shadow-5-strong"
             role="button">
             <img src="https://img.icons8.com/ios/50/group-of-projects.png" width="36px" alt="projects" title="Projects"/>
           </a>
-          <a  routerLink=""
+          <a  routerLink="/education"
             [routerLinkActive]="'active'"
             (click)="scrollToEducation()"
             class="btn btn-white px-auto shadow-5-strong"
             role="button">
             <img src="https://img.icons8.com/dotty/80/education.png" width="36px" alt="education" title="Education"/>
           </a>
-          <a  routerLink=""
+          <a  routerLink="/experience"
             [routerLinkActive]="'active'"
             (click)="scrollToExperience()"
             class="btn btn-white px-auto shadow-5-strong"
             role="button">
             <img src="https://img.icons8.com/dotty/80/customer-insight.png" width="36px" alt="experience" title="Experience"/>
           </a>
-          <a  routerLink=""
+          <a  routerLink="/contact"
             [routerLinkActive]="'active'"
             (click)="scrollToContact()"
             class="btn btn-white px-auto shadow-5-strong"
