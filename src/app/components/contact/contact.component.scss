@@ -43,7 +43,7 @@
 .form-control[type=text]:focus {
 border: 2px solid #555;
 }
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 700px) {
   .first_col {
       position: initial;
       left: 0 !important;
@@ -56,7 +56,7 @@ border: 2px solid #555;
   .row-last {
       left: 0 !important;
       width: 100% !important;
-      height: 500px !important;
+      height: 300px !important;
       top: 0 !important;
   }
 }

@@ -14,12 +14,15 @@
 }
 
 .text {
-    text-align: justify;
-    font-size: 18px;
-    line-height: 1.6;
+    border: 1px solid;
+    padding-right: 150px;
+    position: relative;
+    top: 50px;
+    right: 50px;
 }
-
-.image {
-    max-width: 100%;
-    height: auto;
+.pic {
+    padding-left: 200px;
+    @media screen {
+        align-items: center;
+    }
 }
