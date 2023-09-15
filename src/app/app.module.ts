@@ -36,6 +36,7 @@ import { MzamomtshaComponent } from './components/mzamomtsha/mzamomtsha.componen
 import { BankappComponent } from './components/bankapp/bankapp.component';
 import { CalculatorappComponent } from './components/calculatorapp/calculatorapp.component';
 
+
 @NgModule({
   declarations: [
     AppComponent,
