@@ -32,6 +32,9 @@ import { MdbScrollspyModule } from 'mdb-angular-ui-kit/scrollspy';
 import { MdbTabsModule } from 'mdb-angular-ui-kit/tabs';
 import { MdbTooltipModule } from 'mdb-angular-ui-kit/tooltip';
 import { MdbValidationModule } from 'mdb-angular-ui-kit/validation';
+import { MzamomtshaComponent } from './components/mzamomtsha/mzamomtsha.component';
+import { BankappComponent } from './components/bankapp/bankapp.component';
+import { CalculatorappComponent } from './components/calculatorapp/calculatorapp.component';
 
 @NgModule({
   declarations: [
@@ -45,6 +48,9 @@ import { MdbValidationModule } from 'mdb-angular-ui-kit/validation';
     ExperienceComponent,
     ContactComponent,
     FooterComponent,
+    MzamomtshaComponent,
+    BankappComponent,
+    CalculatorappComponent,
   ],
   imports: [
     BrowserModule,
