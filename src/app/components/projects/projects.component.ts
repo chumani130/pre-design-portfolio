@@ -20,9 +20,13 @@ export class ProjectsComponent {
     })
   }
   openCalculatorModal() {
-    this.modalRef = this.modalService.open(CalculatorappComponent)
+    this.modalRef = this.modalService.open(CalculatorappComponent, {
+      modalClass: 'modal-dialog-centered'
+    })
   }
   openMzamomtshaModal() {
-    this.modalRef = this.modalService.open(MzamomtshaComponent)
+    this.modalRef = this.modalService.open(MzamomtshaComponent, {
+      modalClass: 'modal-dialog-centered'
+    })
   }
 }
