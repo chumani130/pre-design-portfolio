@@ -53,3 +53,10 @@
 a {
   text-decoration: none;
 }
+.button {
+  background-color:#caccd4;
+  font-weight: bold;
+  &:hover {
+    background-color: #b3b8ce;
+  }
+}
