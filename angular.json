@@ -33,7 +33,9 @@
               "src/styles.scss"
             ],
             "scripts": [
-              "node_modules/chart.js/dist/chart.js"
+              "node_modules/chart.js/dist/chart.js",
+              "./node_modules/jquery/dist/jquery.slim.min.js",
+              "./node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"
             ]
           },
           "configurations": {
@@ -102,5 +104,8 @@
         }
       }
     }
+  },
+  "cli": {
+    "analytics": "585de548-af23-411b-9498-53d09e49f256"
   }
 }

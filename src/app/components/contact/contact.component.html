@@ -3,21 +3,71 @@
 
         <div class="col-md-6 first_col ">
             <h1 class="text-center mt-3">Contact Me</h1>
-            <form [formGroup]="contactForm" class="p-4 mt-6" (ngSubmit)="saveContactDetails()">
+            <form [formGroup]="contactForm" class="p-4 mt-6">
                 <div class="mb-3" form-group>
-                    <label for="name" class="form-label">Name: </label>
-                    <input type="text" class="form-control" id="name" placeholder="Enter Your Name" formControlName="FullName" required>
+                    <label 
+                        for="name" 
+                        class="form-label">
+                        Name: 
+                    </label>
+                    <input 
+                        type="text" 
+                        class="form-control" 
+                        id="name" 
+                        placeholder="Enter Your Name" 
+                        formControlName="fullName" 
+                        name="fullName" 
+                        autocomplete="given-name" 
+                        matInput/>
                 </div>
+                <mat-error class="error">
+                    Name is required!
+                </mat-error>
                 <div class="mb-3" form-group>
-                    <label for="email" class="form-label">Email: </label>
-                    <input type="text" class="form-control" id="email" aria-describedby="emailHelp" placeholder="Enter Email" formControlName="email" required>
+                    <label 
+                        for="email" 
+                        class="form-label">
+                        Email: 
+                    </label>
+                    <input 
+                        type="text" 
+                        class="form-control" 
+                        id="email" 
+                        aria-describedby="emailHelp" 
+                        placeholder="Enter Email" 
+                        formControlName="email" 
+                        autocomplete="off"
+                        matInput/>
                 </div>
+                <mat-error class="error">
+                    Email is <strong>required</strong>
+                </mat-error>
                 <div class="mb-3" form-group>
-                    <label for="Textarea" class="form-label">Enter your massage: </label>
-                    <textarea  type="text" class="form-control" id="text" formControlName="message" name="message" placeholder="Enter Your Message" rows="3" required></textarea>
+                    <label 
+                        for="text" 
+                        class="form-label">
+                        Enter your massage: 
+                    </label>
+                    <textarea  
+                        type="text" 
+                        class="form-control" 
+                        id="text" 
+                        formControlName="message" 
+                        name="message" 
+                        placeholder="Enter Your Message" 
+                        rows="3" 
+                        matInput #message maxlength="256">
+                    </textarea>
                 </div>
+                <mat-hint align="start" class="error"><strong>Don't disclose personal info</strong> </mat-hint>
+                 <mat-hint align="end">{{message.value.length}} / 256</mat-hint>
                 <div class="mb-3">
-                    <button class="btn btn-primary" type="submit" mdbRipple (click)="saveContactDetails()">Send Now</button>
+                    <button 
+                        class="btn btn-primary" 
+                        type="submit" 
+                        mdbRipple (click)="saveContactDetails()">
+                        Send Now
+                    </button>
                 </div>
             </form>
         </div>

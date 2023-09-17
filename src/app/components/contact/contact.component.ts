@@ -26,25 +26,29 @@ export class ContactComponent implements OnInit{
   }
 
   saveContactDetails() {
-    this.contactService.createData(this.contactForm.value).subscribe(res => {
-      this.contactForm.reset();
-      Swal.fire({
-        title: 'Success',
-        text: 'Your message has been sent successfully',
-        icon: 'success',
-        confirmButtonText: 'Ok'
-      }).then(r =>
-        window.location.reload());
-    } , error => {
-      console.log(error);
-      Swal.fire({
-        title: 'Error',
-        text: 'Something went wrong, please try again later',
-        icon: 'error',
-        confirmButtonText: 'Ok'
-      }).then(r =>
-        window.location.reload());
-    });
+
+    if (this.contactForm.valid) {
+      this.contactService.createData(this.contactForm.value).subscribe(res => {
+        this.contactForm.reset();
+        Swal.fire({
+          title: 'Success',
+          text: 'Your message has been sent successfully',
+          icon: 'success',
+          confirmButtonText: 'Ok'
+        }).then(r =>
+          window.location.reload());
+      } , error => {
+        console.log(error);
+        Swal.fire({
+          title: 'Error',
+          text: 'Something went wrong, please try again later',
+          icon: 'error',
+          confirmButtonText: 'Ok'
+        }).then(r =>
+          window.location.reload());
+      });
+    }
+    
   }
 
 }

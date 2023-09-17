@@ -36,6 +36,9 @@ import { MzamomtshaComponent } from './components/mzamomtsha/mzamomtsha.componen
 import { BankappComponent } from './components/bankapp/bankapp.component';
 import { CalculatorappComponent } from './components/calculatorapp/calculatorapp.component';
 
+import {MatInputModule } from '@angular/material/input';
+import {MatFormFieldModule} from '@angular/material/form-field';
+
 
 @NgModule({
   declarations: [
@@ -75,6 +78,8 @@ import { CalculatorappComponent } from './components/calculatorapp/calculatorapp
     MdbTabsModule,
     MdbTooltipModule,
     MdbValidationModule,
+    MatInputModule,
+    MatFormFieldModule
 
   ],
   providers: [],
