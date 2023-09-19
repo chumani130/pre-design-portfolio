@@ -6,6 +6,18 @@
     overflow: hidden;
     margin-right: 20px;
 }
+h1{
+  // padding-bottom: 30px;
+  // padding-top: 30px;
+  margin-bottom: 30px;
+  font-size: 20px;
+  margin-bottom: 0px;
+// float: right;
+text-align: left;
+}
+p{
+  margin-top: 10px;
+}
 .btn {
   display: inline-flex;
   height: 180px;
@@ -50,12 +62,7 @@
 margin: 50px;
 }
 
-h1 {
-    font-size: 20px;
-    margin-bottom: 0px;
-  float: right;
-  text-align: right;
-}
+
 
 p {
     font-size: 14px;
