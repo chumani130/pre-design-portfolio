@@ -7,12 +7,20 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent implements OnInit {
-  title = 'pre-design-portfolio';
+  title = 'Chumani-Madikizela';
 
   constructor(){ }
-  ngOnInit(): void {
-    
-  }
+  menuVariable:boolean = false;
+  menu_icon_Varriable:boolean = false;
+
+
+openMenu(){
+  this.menuVariable =! this.menuVariable;
+  this.menu_icon_Varriable =! this.menu_icon_Varriable;
+}
+
+  ngOnInit(): void {}
+
   scrollToHome() {
     document.getElementById("home")?.scrollIntoView();
     const homeId =  document.getElementById("home")?.scrollIntoView({behavior: "smooth"});

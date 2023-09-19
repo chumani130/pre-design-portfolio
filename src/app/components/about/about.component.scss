@@ -14,14 +14,13 @@
 }
 
 .text {
-    border: 1px solid;
-    padding-right: 150px;
+    padding-right: 20px;
     position: relative;
     top: 50px;
-    right: 50px;
+    right: 10px;
 }
 .pic {
-    padding-left: 200px;
+    padding-left: 20px;
     @media screen {
         align-items: center;
     }
