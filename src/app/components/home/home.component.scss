@@ -115,16 +115,13 @@ p {
 // }
 // }
 
-@media only screen and (min-width: 1024px) {      //2
+@media only screen and (min-width: 1025px) {      //2
   .my-pic {
     width: 300px;
     height: 320px;
     border-radius: 50%;
     overflow: hidden;
     margin-right: 20px;
-    // .text {
-    //   margin-bottom: 200px;
-    // }
 }
 }
 @media screen and (max-width: 1024px) {   //3
