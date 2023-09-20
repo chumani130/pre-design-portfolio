@@ -1,66 +1,41 @@
-
-:root {
-
-    --primary-yellow: #efcf5e;
-    --parrot-green: #16a34a;
-    --light-blue: #0090dd;
-    --light-gray: #f7f7f7;
-    --fade-white: #fffffff5;
-    --text-gray: #3f3f46;
-    --dark-gray: #18181b;
-    --fade-black: #000000d7;
-  
-  }
-//   .card-container {
-//     display: flex;
-//     flex-wrap: wrap;
-//     justify-content: center;
-  
-//   }
+.card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  margin: 2rem;
+  padding: 1.5rem;
+  background-color: white;
+  border-radius: 1rem;
+  height: auto;
+  width: auto;
+  transition: all 0.5s;
+  -webkit-transition: all 0.5s;
+  box-shadow: rgba(13, 13, 73, 0.2) 0 7px 29px 0;
+}
+.card:hover {
+background-color: #b5bdc4;
+  transition: all 0.3s;
+  -webkit-transition: all 0.3s;
+  transform: scale(1.05);
+}
+@media screen and (max-width: 480px) {            //6
   .card {
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    margin: 2rem;
-    padding: 1.5rem;
-    background-color: #3f3f46;
-    border-radius: 1rem;
-    height: auto;
+    /* Change the card's max-width to 100% to make it a full-width column */
+    max-width: 100%;
+  }
+
+  .col-md-4 {
+    /* Center the image horizontally within its container */
+    text-align: center;
+  }
+
+  .col-md-4 img {
+    /* Remove the width, height, and margin styles for the image */
     width: auto;
-    transition: all 0.5s;
-    -webkit-transition: all 0.5s;
-    box-shadow: rgba(100, 100, 111, 0.2) 0 7px 29px 0;
+    height: auto;
+    margin: 0;
+    /* Adjust the border-radius to your preference */
+    border-radius: 10%;
   }
-  .card p {
-    font-size: 10px;
-    color: var(--text-gray);
-  }
-  .card-container .card p span {
-    font-weight: 600;
-  }
-  .card-container .card .imgDiv {
-    position: sticky;
-    display: flex;
-    margin: auto;
-    overflow: hidden;
-    height: -moz-max-content;
-    height: max-content;
-    border-radius: 1rem;
-  }
-  .card-container .card .imgDiv img {
-    max-width: 200px;
-    max-height: 200px;
-    border-radius: 1rem;
-    margin: auto;
-  }
-  .card-container .card:hover {
-    transition: all 0.3s;
-    -webkit-transition: all 0.3s;
-    transform: scale(1.05);
-  }
-  
-  
-  a {
-    text-decoration: none;
-  }
-  
+
+}
