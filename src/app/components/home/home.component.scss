@@ -109,7 +109,7 @@ p {
 }
 }
 
-@media only screen and (max-width: 1024px) {      //1
+@media only screen and (max-width: 1024px) {      //2
   .my-pic {
     width: 300px;
     height: 320px;
@@ -118,9 +118,9 @@ p {
     margin-right: 20px;
 }
 }
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 900px) {           //3
 }
-@media only screen and (max-width: 768px) {      //3
+@media only screen and (max-width: 768px) {      //4
   .my-pic {
     width: 200px;
     height: 220px;
@@ -139,20 +139,27 @@ p {
   }
 }
 
-@media only screen and (max-width: 600px) {          //4
+@media only screen and (max-width: 600px) {          //5
   .drop{
     display: flex;
     flex-direction: column;
     align-items: center;
   }
 }
-@media screen and (max-width: 480px) {            //5
+@media screen and (max-width: 480px) {            //6
   .my-pic {
     width: 200px;
     height: 220px;
     border-radius: 50%;
     overflow: hidden;
     // margin-right: 20px;
+  }
+  .about {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0;
+    margin: 0;
   }
   .text {
     align-items: center;
