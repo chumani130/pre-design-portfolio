@@ -1,24 +1,27 @@
 
-.container {
+.about {
     display: flex;
     align-items: center;
     justify-content: center;
 }
-
-.column {
-    flex: 1;
-    padding: 20px;
-}
 .title {
     align-items: center;
 }
-
-.text {
-    padding-right: 20px;
-    position: relative;
-    top: 50px;
-    right: 10px;
+.text{
+   width: 600px;
 }
+
+.about{
+    display: flex;
+    justify-content: center;
+    gap: 100px;
+
+}
+
+.img-fluid {
+    width: 400px;
+    height: 400px;
+  }
 @media only screen and (max-width: 768px) {  
     .about {
         height: auto;
