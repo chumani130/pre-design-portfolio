@@ -19,19 +19,53 @@
     top: 50px;
     right: 10px;
 }
-// .pic {
-//     // padding-left: 20px;
-//     // @media screen {
-//     //     align-items: center;
-//     // }
-// }
+@media only screen and (max-width: 768px) {  
+    .about {
+        height: auto;
+        width: auto;
+        position: relative; /* Add position: relative to enable z-index */
+        z-index: 2; /* Set a higher z-index value */
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        overflow: visible;
+    }
+    .img-fluid {
+        width: auto;
+        height: 300px;
+      }
+      .text {
+        align-items: center;
+        text-align: center;
+        p {
+            font-size: medium;
+            height: auto;
+        }
+        width: 300px;
+      }
+
+}
 @media only screen and (max-width: 600px) {          //5
-    .my-pic {
-        width: 200px;
+    .about {
+        height: auto;
+        position: relative; /* Add position: relative to enable z-index */
+        z-index: 2; /* Set a higher z-index value */
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        overflow: visible;
+    }
+    .img-fluid {
+        width: auto;
         height: 220px;
-        border-radius: 50%;
-        overflow: hidden;
-        // margin-right: 20px;
+      }
+      .pic {
+        align-items: center;
+        height: auto;
+        padding: 0;
+        margin: 0;
       }
       .text {
         align-items: center;
@@ -39,20 +73,23 @@
         p {
             font-size: medium;
             text-wrap: wrap;
-            height: 300px;
+            height: auto;
         }
       }
 }
-
-
-
 @media screen and (max-width: 480px) {    //6
-    .my-pic {
-        width: 200px;
-        height: 220px;
-        border-radius: 50%;
-        overflow: hidden;
-        // margin-right: 20px;
+     .about {
+        height: auto;
+        position: relative; /* Add position: relative to enable z-index */
+        z-index: 2; /* Set a higher z-index value */
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    } 
+    .img-fluid {
+        width: auto;
+        height: 300px;
       }
       .text {
         align-items: center;
