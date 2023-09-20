@@ -4,6 +4,8 @@
     padding: 20px;
 }
 .skill-container {
+    position: relative; /* Add position: relative to enable z-index */
+    z-index: 1; /* Set a lower z-index value */
     display: grid;
     grid-gap: 2rem;
     width: 60%;
