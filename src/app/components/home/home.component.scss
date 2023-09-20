@@ -130,21 +130,33 @@ p {
 @media screen and (max-width: 900px) {           //3
 }
 @media only screen and (max-width: 768px) {      //4
-  .my-pic {
-    width: 200px;
-    height: 220px;
-    border-radius: 50%;
-    overflow: hidden;
-    margin-right: 20px;
-  }
   .drop{
     display: flex;
     flex-direction: column;
     align-items: center;
   }
+  .my-pic {
+    width: 250px;
+    height: 260px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-right: 20px;
+  }
   .text {
     text-wrap: none;
-
+  }
+  .text {
+    align-items: center;
+    text-align: left;
+  }
+  h2 {
+    font-size: medium;
+  }
+  h1 {
+    font-size: large;
+  }
+  p {
+    font-size: small;
   }
 }
 
@@ -153,7 +165,7 @@ p {
     display: flex;
     flex-direction: column;
     align-items: center;
-  }           //6
+  }        
   .my-pic {
     width: 220px;
     height: 240px;
