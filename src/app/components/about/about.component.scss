@@ -1,27 +1,105 @@
 
-.container {
+.about {
     display: flex;
     align-items: center;
     justify-content: center;
 }
-
-.column {
-    flex: 1;
-    padding: 20px;
-}
 .title {
     align-items: center;
 }
-
-.text {
-    padding-right: 20px;
-    position: relative;
-    top: 50px;
-    right: 10px;
+.text{
+   width: 600px;
 }
-.pic {
-    padding-left: 20px;
-    @media screen {
+
+.about{
+    display: flex;
+    justify-content: center;
+    gap: 100px;
+
+}
+
+.img-fluid {
+    width: 400px;
+    height: 400px;
+  }
+@media only screen and (max-width: 768px) {  
+    .about {
+        height: auto;
+        width: auto;
+        position: relative; /* Add position: relative to enable z-index */
+        z-index: 2; /* Set a higher z-index value */
+        display: flex;
+        flex-direction: column;
         align-items: center;
+        justify-content: center;
+        overflow: visible;
     }
+    .img-fluid {
+        width: auto;
+        height: 300px;
+      }
+      .text {
+        align-items: center;
+        text-align: center;
+        p {
+            font-size: medium;
+            height: auto;
+        }
+        width: 300px;
+      }
+
+}
+@media only screen and (max-width: 600px) {          //5
+    .about {
+        height: auto;
+        position: relative; /* Add position: relative to enable z-index */
+        z-index: 2; /* Set a higher z-index value */
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        overflow: visible;
+    }
+    .img-fluid {
+        width: auto;
+        height: 220px;
+      }
+      .pic {
+        align-items: center;
+        height: auto;
+        padding: 0;
+        margin: 0;
+      }
+      .text {
+        align-items: center;
+        text-align: center;
+        p {
+            font-size: medium;
+            text-wrap: wrap;
+            height: auto;
+        }
+      }
+}
+@media screen and (max-width: 480px) {    //6
+     .about {
+        height: auto;
+        position: relative; /* Add position: relative to enable z-index */
+        z-index: 2; /* Set a higher z-index value */
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    } 
+    .img-fluid {
+        width: auto;
+        height: 300px;
+      }
+      .text {
+        align-items: center;
+        text-align: center;
+        p {
+            font-size: medium;
+            text-wrap: wrap;
+        }
+      }
 }

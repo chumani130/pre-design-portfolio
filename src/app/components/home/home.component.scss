@@ -15,35 +15,36 @@ h1{
 // float: right;
 text-align: left;
 }
+h2 {
+  margin-bottom: 30px;
+  font-size: 14px;
+  margin-bottom: 0px;
+}
 p{
   margin-top: 10px;
 }
 .btn {
   display: inline-flex;
-  height: 180px;
-  padding: 10px;
+  height: auto;
+  padding: 0;
+  margin: 0;;
   background: #009579;
   border: none;
+  gap: 20px;
   border-radius: 5px;
-  overflow: hidden;
-  font-size: 16px;
-  font-weight: 500;
+  // overflow: hidden;
+  font-size: 14px;
+  // font-weight: 500;
   cursor: pointer;
-  &:hover {
-    background: #008168;
-  }
-  &:active {
-    background: #008168;
-  }
+
   &button-icon {
     display: inline-flex;
     align-items: center;  }
     padding: 0 24px;
     height: 100%;
-    &button-icon {
-      font: size 1.5em;
-      background: rgba( 0, 0, 0, 0.08);
-    }
+    font: size 1.5em;
+    background: rgba( 0, 0, 0, 0.08);
+    
 }
 
 .my-pic img {
@@ -59,18 +60,20 @@ p{
     display: flex;
     flex-direction: column;
     align-items: left;
-margin: 50px;
+    margin: 50px;
+    
 }
 
 
 
 p {
     font-size: 14px;
-    margin-bottom: 20px;
+    // margin-bottom: 20px;
 }
 .buttons {
     display: flex;
     justify-content: space-around;
+    align-items: left;
 }
 .button {
     display: flex;
@@ -102,8 +105,149 @@ p {
         border: 2px solid rgb(95, 94, 94);
     }
 }
+// @media only screen and (min-width: 1200px) {      //1
+//   .my-pic {
+//     width: auto;
+//     // height: auto;
+//     // border-radius: 50%;
+//     // overflow: hidden;
+//     // margin-right: auto;
+// }
+// }
 
+@media only screen and (min-width: 1025px) {      //2
+  .my-pic {
+    width: 300px;
+    height: 320px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-right: 20px;
+}
+}
+@media screen and (max-width: 1024px) {   //3
+  .drop{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .my-pic {
+    width: 250px;
+    height: 260px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-right: 20px;
+  }
+  .text {
+    text-wrap: none;
+  }
+  .text {
+    align-items: center;
+    text-align: left;
+  }
+  h2 {
+    font-size: large;
+  }
+  h1 {
+    font-size: x-large;
+  }
+  p {
+    font-size: medium;
+  }
 
+}
+@media only screen and (max-width: 768px) {      //4
+  .drop{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .my-pic {
+    width: 250px;
+    height: 260px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-right: 20px;
+  }
+  .text {
+    text-wrap: none;
+  }
+  .text {
+    align-items: center;
+    text-align: left;
+  }
+  h2 {
+    font-size: medium;
+  }
+  h1 {
+    font-size: large;
+  }
+  p {
+    font-size: small;
+  }
+}
+
+@media only screen and (max-width: 600px) {          //5
+  .drop{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }        
+  .my-pic {
+    width: 220px;
+    height: 240px;
+    border-radius: 50%;
+    overflow: hidden;
+    // margin-right: 20px;
+  }
+  .text {
+    align-items: center;
+    text-align: left;
+  }
+  h2 {
+    font-size: medium;
+  }
+  h1 {
+    font-size: large;
+  }
+  p {
+    font-size: small;
+  }
+}
+@media screen and (max-width: 480px) { 
+  .drop{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }           //6
+  .my-pic {
+    width: 200px;
+    height: 220px;
+    border-radius: 50%;
+    overflow: hidden;
+    // margin-right: 20px;
+  }
+  .about {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+  }
+  .text {
+    align-items: center;
+    text-align: left;
+  }
+  h2 {
+    font-size: small;
+  }
+  h1 {
+    font-size: large;
+  }
+  p {
+    font-size: small;
+  }
+
+}
 .social-links {
     margin-top: 20px;
     display: flex;
@@ -195,25 +339,4 @@ p {
 .social-links .behance:hover,
 .social-links .behance:focus {
   background-color: var(--dark-gray);
-}
-
-@media only screen and (max-width: 1024px) {
-  .my-pic {
-    width: 100px;
-    height: 220px;
-    border-radius: 50%;
-    overflow: hidden;
-    margin-right: 20px;
-}
-}
-
-
-@media only screen and (max-width: 800px) {
-  .drop{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  
-
 }
