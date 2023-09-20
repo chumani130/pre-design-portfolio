@@ -27,15 +27,31 @@ background-color: #b5bdc4;
   .col-md-4 {
     /* Center the image horizontally within its container */
     text-align: center;
+    .col-md-4 img {
+      /* Remove the width, height, and margin styles for the image */
+      width: auto;
+      height: auto;
+      margin: 0;
+      /* Adjust the border-radius to your preference */
+      border-radius: 10%;
+    }
+  }
+  .col-md-8 {
+    text-align: center;
+    h4 {
+      text-wrap: wrap;
+      font-size: large;
+    }
+    h5 {
+      text-wrap: wrap;
+      font-size: medium;
+    }
+    h6 {
+      text-wrap: wrap;
+      font-size: small;
+    }
   }
 
-  .col-md-4 img {
-    /* Remove the width, height, and margin styles for the image */
-    width: auto;
-    height: auto;
-    margin: 0;
-    /* Adjust the border-radius to your preference */
-    border-radius: 10%;
-  }
+  
 
 }
