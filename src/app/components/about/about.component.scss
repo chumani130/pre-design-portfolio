@@ -25,6 +25,27 @@
 //     //     align-items: center;
 //     // }
 // }
+@media only screen and (max-width: 600px) {          //5
+    .my-pic {
+        width: 200px;
+        height: 220px;
+        border-radius: 50%;
+        overflow: hidden;
+        // margin-right: 20px;
+      }
+      .text {
+        align-items: center;
+        text-align: center;
+        p {
+            font-size: medium;
+            text-wrap: wrap;
+            height: 300px;
+        }
+      }
+}
+
+
+
 @media screen and (max-width: 480px) {    //6
     .my-pic {
         width: 200px;
