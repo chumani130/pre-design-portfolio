@@ -19,9 +19,26 @@
     top: 50px;
     right: 10px;
 }
-.pic {
-    padding-left: 20px;
-    @media screen {
+// .pic {
+//     // padding-left: 20px;
+//     // @media screen {
+//     //     align-items: center;
+//     // }
+// }
+@media screen and (max-width: 480px) {    //6
+    .my-pic {
+        width: 200px;
+        height: 220px;
+        border-radius: 50%;
+        overflow: hidden;
+        // margin-right: 20px;
+      }
+      .text {
         align-items: center;
-    }
+        text-align: center;
+        p {
+            font-size: medium;
+            text-wrap: wrap;
+        }
+      }
 }
