@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import emailjs, { EmailJSResponseStatus } from '@emailjs/browser'
 
 
 @Component({
