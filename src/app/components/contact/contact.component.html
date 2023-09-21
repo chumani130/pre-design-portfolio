@@ -20,9 +20,8 @@
                         autocomplete="given-name" 
                         matInput/>
                 </div>
-                <mat-error class="error">
-                    Name is required!
-                </mat-error>
+                    <mat-error class="error" *ngIf="contactForm.get('fullName').hasError('required') && contactForm.get('fullName').touched">Name is required!</mat-error>
+                    <mat-error class="error" *ngIf="contactForm.get('fullName').hasError('minlength') && contactForm.get('fullName').touched">Name must be at least 5 characters long.</mat-error>
                 <div class="mb-3" form-group>
                     <label 
                         for="email" 
@@ -40,9 +39,8 @@
                         autocomplete="off"
                         matInput/>
                 </div>
-                <mat-error class="error">
-                    Email is <strong>required</strong>
-                </mat-error>
+                 <mat-error class="error" *ngIf="contactForm.get('email').hasError('required') && contactForm.get('email').touched">Email is required</mat-error>
+    <mat-error class="error" *ngIf="contactForm.get('email').hasError('email') && contactForm.get('email').touched">Email is incorrect</mat-error>
                 <div class="mb-3" form-group>
                     <label 
                         for="text" 
@@ -60,7 +58,7 @@
                         matInput #message maxlength="256">
                     </textarea>
                 </div>
-                <mat-hint align="start" class="error"><strong>Don't disclose personal info</strong> </mat-hint>
+                <mat-hint align="start" class="error">Don't disclose personal info </mat-hint>
                  <mat-hint align="end">{{message.value.length}} / 256</mat-hint>
                 <div class="mb-3">
                     <button 
