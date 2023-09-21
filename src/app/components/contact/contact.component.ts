@@ -1,6 +1,7 @@
 import {Component, OnInit} from '@angular/core';
 import {FormBuilder, FormGroup, Validators} from "@angular/forms";
 import {ContactService} from "src/app/shared/contact.service";
+import emailjs, { EmailJSResponseStatus } from 'emailjs-com';
 // import { ReactiveFormsModule } from '@angular/forms';
 import Swal from 'sweetalert2';
 
@@ -36,8 +37,11 @@ export class ContactComponent implements OnInit{
           icon: 'success',
           confirmButtonText: 'Ok'
         }).then(r =>
-          window.location.reload());
-      } , error => {
+          window.location.reload()
+          );
+          // Call the sendEmail function after a successful form submission
+          this.sendEmail(this.contactForm);
+      } , (error) => {
         console.log(error);
         Swal.fire({
           title: 'Error',
@@ -49,6 +53,15 @@ export class ContactComponent implements OnInit{
       });
     }
     
+  }
+  public sendEmail(contactForm: Event) {
+    contactForm.preventDefault();
+    emailjs.sendForm('service_0rsk18a', 'template_m6lpwxp', contactForm.target as HTMLFormElement, 'wUvWZoYeLcYhUQAUI')
+      .then((result: EmailJSResponseStatus) => {
+        console.log(result.text);
+      }, (error) => {
+        console.log(error.text);
+      });
   }
 
 }
