@@ -40,7 +40,7 @@ export class ContactComponent implements OnInit{
           window.location.reload()
           );
           // Call the sendEmail function after a successful form submission
-          this.sendEmail(this.contactForm);
+          this.sendEmail(this.contactForm.value);
       } , (error) => {
         console.log(error);
         Swal.fire({
@@ -54,9 +54,9 @@ export class ContactComponent implements OnInit{
     }
     
   }
-  public sendEmail(contactForm: Event) {
-    contactForm.preventDefault();
-    emailjs.sendForm('service_0rsk18a', 'template_m6lpwxp', contactForm.target as HTMLFormElement, 'wUvWZoYeLcYhUQAUI')
+  public sendEmail(e: Event) {
+    e.preventDefault();
+    emailjs.sendForm('service_0rsk18a', 'template_m6lpwxp', e.target as HTMLFormElement, 'wUvWZoYeLcYhUQAUI')
       .then((result: EmailJSResponseStatus) => {
         console.log(result.text);
       }, (error) => {
