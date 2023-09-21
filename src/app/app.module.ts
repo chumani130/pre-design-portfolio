@@ -38,7 +38,6 @@ import { CalculatorappComponent } from './components/calculatorapp/calculatorapp
 
 import {MatInputModule } from '@angular/material/input';
 import {MatFormFieldModule} from '@angular/material/form-field';
-import { ContactUsComponent } from './components/contact-us/contact-us.component';
 
 
 @NgModule({
@@ -56,7 +55,6 @@ import { ContactUsComponent } from './components/contact-us/contact-us.component
     MzamomtshaComponent,
     BankappComponent,
     CalculatorappComponent,
-    ContactUsComponent,
   ],
   imports: [
     BrowserModule,
