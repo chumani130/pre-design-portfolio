@@ -46,7 +46,8 @@ header{
     cursor:pointer;
     box-shadow: 0 0 20px #000000;
     transition: 0.4s ease-in-out;
-    background-color:white;
+    background-color:rgb(183, 185, 196);
+    width: auto;
 }
 
 .menu_icon{
@@ -61,20 +62,27 @@ header{
 }
 
 .logo {
+    display: inline-block; /* Display the logo inline with the menu */
     justify-content: center;
     align-items: center;
-}
-
-.logo img {
-  object-fit: cover;
-    width: 20%;
-}
+    vertical-align: middle; /* Vertically align the logo */
+    margin: 20px; /* Adjust this value to control the spacing between the logo and the menu */
+    img {
+        object-fit: cover;
+        width: 60px;
+    }
+  }
 .material-icons{
 vertical-align: middle;
   margin-right: 5px;
 }
 .active {
-    background: rgba(black, 0.4);
+    color: black;
+    cursor:pointer;
+    box-shadow: 0 0 20px #000000;
+    transition: 0.4s ease-in-out;
+    background-color:white;
+    width: auto;
 }
 @media only screen and (max-width: 1000px)  {
 
