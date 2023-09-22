@@ -5,6 +5,7 @@ import emailjs, { EmailJSResponseStatus } from 'emailjs-com';
 // import { ReactiveFormsModule } from '@angular/forms';
 import Swal from 'sweetalert2';
 
+
 @Component({
   selector: 'app-contact',
   templateUrl: './contact.component.html',
@@ -12,6 +13,7 @@ import Swal from 'sweetalert2';
 })
 export class ContactComponent implements OnInit{
   contactForm: FormGroup | any;
+  
   constructor(private fb: FormBuilder,private contactService: ContactService) {}
 
   ngOnInit(): void {
@@ -63,5 +65,6 @@ export class ContactComponent implements OnInit{
         console.log(error.text);
       });
   }
+  
 
 }
