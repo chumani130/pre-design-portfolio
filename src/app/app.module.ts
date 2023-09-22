@@ -13,6 +13,7 @@ import { ExperienceComponent } from './components/experience/experience.componen
 import { ContactComponent } from './components/contact/contact.component';
 import { FooterComponent } from './shared/footer/footer.component';
 
+import { RecaptchaCommonModule } from 'ng-recaptcha/lib/recaptcha-common.module';
 import {ReactiveFormsModule} from "@angular/forms";
 import {AngularFireModule} from "@angular/fire/compat";
 import {BrowserAnimationsModule} from "@angular/platform-browser/animations";
@@ -38,6 +39,9 @@ import { CalculatorappComponent } from './components/calculatorapp/calculatorapp
 
 import {MatInputModule } from '@angular/material/input';
 import {MatFormFieldModule} from '@angular/material/form-field';
+import { RecaptchaModule } from 'ng-recaptcha';
+import { RECAPTCHA_V3_SITE_KEY } from 'ng-recaptcha/lib/tokens';
+import { ReCaptchaV3Service } from 'ng-recaptcha/lib/recaptcha-v3.service';
 
 
 @NgModule({
@@ -78,10 +82,18 @@ import {MatFormFieldModule} from '@angular/material/form-field';
     MdbTooltipModule,
     MdbValidationModule,
     MatInputModule,
-    MatFormFieldModule
+    MatFormFieldModule,
+    RecaptchaCommonModule,
+    RecaptchaModule
 
   ],
-  providers: [],
+  providers: [{
+    provide: RECAPTCHA_V3_SITE_KEY,
+    useValue: '6LemRUQoAAAAAFSewB52eVx2qFlfdGlIrbkXzTaL'
+  },
+  ReCaptchaV3Service,
+  ],
+
   bootstrap: [AppComponent]
 })
 export class AppModule { }
