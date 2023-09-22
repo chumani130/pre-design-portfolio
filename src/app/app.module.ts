@@ -13,7 +13,9 @@ import { ExperienceComponent } from './components/experience/experience.componen
 import { ContactComponent } from './components/contact/contact.component';
 import { FooterComponent } from './shared/footer/footer.component';
 
-import {ReactiveFormsModule} from "@angular/forms";
+import { FormsModule } from '@angular/forms';
+import { ReactiveFormsModule } from '@angular/forms';
+import { RecaptchaModule, RecaptchaFormsModule, RECAPTCHA_SETTINGS, RecaptchaSettings } from 'ng-recaptcha';
 import {AngularFireModule} from "@angular/fire/compat";
 import {BrowserAnimationsModule} from "@angular/platform-browser/animations";
 import {environment} from "../environments/environment";
@@ -38,6 +40,8 @@ import { CalculatorappComponent } from './components/calculatorapp/calculatorapp
 
 import {MatInputModule } from '@angular/material/input';
 import {MatFormFieldModule} from '@angular/material/form-field';
+
+
 
 
 @NgModule({
@@ -78,10 +82,19 @@ import {MatFormFieldModule} from '@angular/material/form-field';
     MdbTooltipModule,
     MdbValidationModule,
     MatInputModule,
-    MatFormFieldModule
+    MatFormFieldModule,
+    RecaptchaModule,
+    RecaptchaFormsModule,
+    FormsModule,
+    
 
   ],
-  providers: [],
+  providers: [
+    {
+      provide: RECAPTCHA_SETTINGS,
+      useValue: { siteKey: 'Y6LfbsUQoAAAAAAzJPMntfzaAuV4yfvNLxI3y1PvU' } as RecaptchaSettings,
+    },
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

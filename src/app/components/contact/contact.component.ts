@@ -63,5 +63,6 @@ export class ContactComponent implements OnInit{
         console.log(error.text);
       });
   }
+  
 
 }
